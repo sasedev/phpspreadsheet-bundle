@@ -1,0 +1,57 @@
+{
+	"name" : "sasedev/phpspreadsheet-bundle",
+	"description" : "PHPSpreadsheet wrapper for symfony",
+	"keywords" : [
+		"phpspreadsheet",
+		"symfony",
+		"sasedev"
+	],
+	"type" : "symfony-bundle",
+    "homepage": "https://github.com/sasedev/phpspreadsheet-bundle",
+    "support": {
+        "email": "sinus@sasedev.net",
+        "issues": "https://github.com/sasedev/phpspreadsheet-bundle/issues"
+    },
+	"license" : "MIT",
+    "authors": [
+        {
+            "name": "SALAH Abdelkadeur Seifeddine",
+            "homepage": "https://sasedev.net",
+            "email": "sinus@sasedev.net"
+        }
+    ],
+	"config" : {
+		"bin-dir" : "bin",
+		"component-dir" : "vendor",
+		"preferred-install" : {
+			"*" : "dist"
+		},
+		"process-timeout" : 1200,
+		"sort-packages" : true
+	},
+	"autoload" : {
+		"psr-4" : {
+			"" : "src"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"" : "tests"
+		}
+	},
+	"require" : {
+		"php": ">=7.2",
+		"myclabs/php-enum": "^1.7",
+		"phpoffice/phpspreadsheet": "^1.14",
+		"symfony/config": "^5.1",
+		"symfony/dependency-injection": "^5.1",
+		"symfony/http-kernel": "^5.1"
+	},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

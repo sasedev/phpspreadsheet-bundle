@@ -1,0 +1,3 @@
+services:
+    Sasedev\PhpSpreadsheetBundle\Factory\PhpSpreadsheetFactory:
+        public: true
